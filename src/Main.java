@@ -1,25 +1,15 @@
-/*
-@author BO
- */
-
 import java.util.Scanner;
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
-        int c = -99999,b = 0;
         Scanner scanner = new Scanner(System.in);
-        String[] name = new String[10];
-        int[] age = new int[10];
-        String[] address = new String[10];
-        for (int i = 0; i < name.length; i++) name[i] = scanner.next();
-        for (int i = 0; i < age.length; i++) age[i] = scanner.nextInt();
-        for (int i = 0; i < address.length; i++) address[i] = scanner.next();
-        for (int i = 0; i < age.length; i++) {
-            if (age[i] > c) {
-                c = age[i];
-                b = i;
-            }
-        }
-        System.out.println(name[b] + " " + c + "(" + b + ")" + " live in " + address[b]);
+        int n = scanner.nextInt();
+        if(n==1) System.out.println("Понедельник,рабочий день");
+        else if(n==2) System.out.println("Вторник,рабочий день");
+        else if(n==3) System.out.println("Среда,рабочий день");
+        else if(n==4) System.out.println("Четверг,рабочий день");
+        else if(n==5) System.out.println("Пятница,рабочий день");
+        else if(n==6) System.out.println("Суббота,выходной день");
+        else if(n==7) System.out.println("Воскресенье,выходной день");
     }
 }
