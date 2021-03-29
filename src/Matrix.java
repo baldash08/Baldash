@@ -12,24 +12,24 @@ public class Matrix {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-        for(i=0;i<n;i++) {
-            sum=0;
-            for(j=0;j< m;j++){
-                sum+=matrix[i][j];
-            }
-            System.out.print(sum + " ");
-        }
-        System.out.println("");
-        for(j=0;j<m;j++) {
-            sum=0;
-            for(i=0;i< n;i++){
-                sum+=matrix[i][j];
-            }
-            System.out.print(sum + " ");
-        }
-        System.out.println("\n");
-        for(i=0;i<matrix.length;i++) {
-            for(j=0;j< matrix[i].length;j++){
+//        for(i=0;i<n;i++) {
+//            sum=0;
+//            for(j=0;j< m;j++){
+//                sum+=matrix[i][j];
+//            }
+//            System.out.print(sum + " ");
+//        }
+//        System.out.println("");
+//        for(j=0;j<m;j++) {
+//            sum=0;
+//            for(i=0;i< n;i++){
+//                sum+=matrix[i][j];
+//            }
+//            System.out.print(sum + " ");
+//        }
+//        System.out.println("\n");
+            for(i=n-1;i>-1;i--){
+                for(j=0;j<m;j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println("");
