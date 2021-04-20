@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class TimeMachine {
     int age;
     public void goToFuture(int age) {
@@ -15,8 +17,8 @@ public class TimeMachine {
             System.out.println("hello" + names);
         }
     }
-    public static void main(String[] args) { ;
-
+    public static void main(String[] args) throws IOException { ;
+         int x = System.in.read();
     }
 
 }

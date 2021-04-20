@@ -20,16 +20,16 @@ public class Matrix {
                 matrix1[i][j] = scanner.nextInt();
             }
         }
-        for(i=0;i<n;i++) {
-            for(j=0;j< m;j++){
-                matrix2[i][j] = (matrix[i][j] * matrix1[i][j]) + (matrix[i][j+1] * matrix1[i+1][j]);
+        for(i=0;i<m;i++) {
+            for(j=0;j< p;j++){
+                matrix2[i][j] += (matrix[0][0] * matrix1[0][j]) + (matrix[i][j+1] * matrix1[i+1][j]);
             }
         }
         for(i=0;i<m;i++){
             for(j=0;j<p;j++) {
                 System.out.print(matrix2[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
