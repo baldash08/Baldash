@@ -18,6 +18,7 @@ public class Animal {
     public static void main(String[] args) {
         new Cat("brain","hearth","tail");
 
+
     }
 }
 class Cat extends Animal{
@@ -28,3 +29,5 @@ class Cat extends Animal{
         System.out.println("This is " + tail);
     }
 }
+
+
